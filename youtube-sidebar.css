@@ -1,0 +1,85 @@
+.sidebar {
+    background-color: white;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    bottom: 0;
+    width: 74px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+    z-index: 2;
+}
+
+.sidebar-icons {
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    row-gap: 5px;
+    cursor: pointer;
+}
+
+.sidebar-icons img {
+    height: 24px;
+}
+
+.sidebar-icons div {
+    font-family: Roboto;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.sidebar-icons:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+@media (min-width: 1200px) {
+
+    body {
+        padding-left: 270px;
+    }
+
+    .sidebar {
+        background-color: white;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        bottom: 0;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3px;
+        z-index: 2;
+    }
+
+    .sidebar-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        column-gap: 26px;
+        flex-shrink: 0;
+        row-gap: 5px;
+        cursor: pointer;
+
+        height: 45px;
+    }
+    
+    .sidebar-icons img {
+        height: 26px;
+        margin-left: 22px;
+    }
+    
+    .sidebar-icons div {
+        font-family: Roboto;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

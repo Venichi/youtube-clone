@@ -1,0 +1,48 @@
+.channel-container {
+    height: 40px;
+    position: relative;
+}
+
+.channel-tooltip {
+    width: 180px;
+    background-color: white;    
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    padding: 12px 12px;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+    bottom: -75px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.channel-container:hover .channel-tooltip {
+    opacity: 1;
+}
+
+.author-channel-tooltip {
+    height: 45px;
+    border-radius: 22px;
+}
+
+.author-info-container {
+    flex: 1fr;
+    margin-left: 8px;
+    line-height: 18px;
+}
+
+.author-name-tooltip {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.author-subscribers-tooltip {
+    font-family: Roboto;
+    font-size: 13px;
+    color: rgb(77, 77, 77);
+}
